@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+body {
+background: linear-gradient(to bottom, #dfccf6, #efc7d7);
+
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+}
