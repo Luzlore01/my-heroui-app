@@ -17,12 +17,11 @@ export default function UsersPage() {
     tipo: ""
   });
 
-  // ESTADOS PARA FILTROS
   const [searchUser, setSearchUser] = useState("");
   const [searchEmail, setSearchEmail] = useState("");
   const [filterType, setFilterType] = useState("");
 
-  // FILTROS APLICADOS
+  
   const filteredUsers = users.filter((u) =>
     u.usuario.toLowerCase().includes(searchUser.toLowerCase()) &&
     u.correo.toLowerCase().includes(searchEmail.toLowerCase()) &&
@@ -68,7 +67,7 @@ export default function UsersPage() {
           </button>
         </div>
 
-        {/* FILTROS */}
+       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <input
             className="p-2 rounded-lg shadow"
@@ -100,7 +99,7 @@ export default function UsersPage() {
           </select>
         </div>
 
-        {/* TABLA SIN BORDES */}
+      
         <table className="w-full text-center">
           <thead className="bg-purple-100 rounded-xl">
             <tr>
@@ -147,7 +146,6 @@ export default function UsersPage() {
         </table>
       </div>
 
-      {/* MODAL CREAR USUARIO */}
       {showCreate && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
           <div className="bg-purple-50 rounded-2xl p-6 w-96 shadow-xl">
@@ -209,7 +207,6 @@ export default function UsersPage() {
         </div>
       )}
 
-      {/* MODAL EDITAR */}
       {editUser && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
           <div className="bg-pink-50 rounded-2xl p-6 w-96 shadow-xl">
