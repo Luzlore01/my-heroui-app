@@ -94,7 +94,7 @@ export default function HomePage() {
 
      
       <Card className="w-full max-w-4xl p-8 shadow-lg bg-white/70">
-        <h1 className="text-4xl font-bold text-purple-700 mb-6">
+        <h1 className="text-4xl font-bold text-purple-700 mb-6 text-center">
           Registro llamadas
         </h1>
 

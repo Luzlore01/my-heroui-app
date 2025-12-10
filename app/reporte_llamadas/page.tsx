@@ -22,7 +22,7 @@ export default function HomePage() {
   const [page, setPage] = React.useState(1);
   const rowsPerPage = 5;
 
-  // DATOS DE PRUEBA 
+
   const data = [
     {
       key: "1",
@@ -46,7 +46,7 @@ export default function HomePage() {
       observaciones: "QUE NOS ENTRO EN UNA LLAMADA DONDE LA USUARIA SE ENCUENTRA CON SU AGRESOR Y ESTA SIENDO GOLPEADA CALLE GARDENIAS M113 LOTE 20 COLONIA AMPLIACION TULPETLAC REFERENCIA CERCA DEL CENTRO DE SALUD Y LA CALLE RIO BRAVO",
       operador: "	RV0012",
     }
-    // LOS DEMÁS AQUÍ
+    
   ];
 
   const pages = Math.ceil(data.length / rowsPerPage);
@@ -83,7 +83,7 @@ export default function HomePage() {
 
 
   <div className="relative bg-white/70 backdrop-blur-lg shadow-xl p-6 rounded-xl">
-   <h2 className="text-3xl font-bold text-purple-700 mb-6">Detalle</h2>
+   <h2 className="text-3xl font-bold text-purple-700 mb-6 text-center">Detalle</h2>
     <Table
       aria-label="Tabla de llamadas"
       bottomContent={
@@ -130,7 +130,6 @@ export default function HomePage() {
   </div>
 </div>
 
-{/* RESUMEN */}
 <div className="w-full max-w-6xl mt-20 bg-white/70 shadow-lg backdrop-blur-md p-8 rounded-lg">
   <h2 className="text-3xl font-bold text-purple-700 mb-6">Resumen</h2>
 

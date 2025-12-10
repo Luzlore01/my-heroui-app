@@ -49,7 +49,9 @@ export function CustomNavbar() {
         </NavbarItem>
 
         <NavbarItem>
-          <HeroLink href="/usuarios" className="text-white hover:text-pink-200">
+          <HeroLink href="/usuarios" 
+          className="text-white hover:text-pink-200"
+          >
             Usuarios
           </HeroLink>
         </NavbarItem>
